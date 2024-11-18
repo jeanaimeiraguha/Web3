@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#contracts">Manage Contracts</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,10 +21,9 @@
 
     <main class="main-content">
         <section id="home" class="home">
-            <img src="assets/home mobile.png" alt="Home Design" class="hero-image">
             <h1>Welcome to Web3</h1>
             <p>Explore the decentralized world with ease and security.</p>
-            <button class="cta-button">Get Started</button>
+            <button id="connectWallet" class="cta-button">Connect Wallet</button>
         </section>
 
         <section id="features" class="features">
@@ -44,12 +43,24 @@
                 </div>
             </div>
         </section>
+
+        <section id="contracts" class="contracts">
+            <h2>Manage Smart Contracts</h2>
+            <div class="contract-interaction">
+                <input type="text" id="contractAddress" placeholder="Enter Contract Address">
+                <button id="loadContract" class="cta-button">Load Contract</button>
+            </div>
+            <div id="contractInfo">
+                <p>Contract Details will appear here...</p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <p>&copy; 2024 Web3 Design. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
